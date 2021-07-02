@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
 
 export class Navbar extends Component {
   static defaultProps = {
     title: "Github Finder",
+  };
+
+  static propTypes = {
+    title: PropTypes.string.isRequired,
   };
   render() {
     return (
